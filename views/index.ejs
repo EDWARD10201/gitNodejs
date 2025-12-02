@@ -6,6 +6,27 @@
     <title>Document</title>
 </head>
 <body>
-    sasa
+
+
+
+
+
+
+
+    <form action="posts" method="POST">
+        <input type="text" name="name" placeholder="名前">
+        <button type="submit" id="addBtn">追加</button>
+    </form>
+
+    <ul id="result">
+        <% users.forEach(user => { %>
+            <li><%= (`${user.id}: ${user.name}`) %></li>
+
+
+        <%}) %>
+    </ul>
+
+
+    
 </body>
 </html>
